@@ -1,0 +1,1146 @@
+<?php
+		if (isset($_GET['done'])) {
+			header('Location: thanks.php');
+			exit;
+		} 
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Всероссийский Центр Сертификации</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/combinat.js"></script>
+
+</head>
+<body>
+	<nav class="navbar" id="header1">
+  		<div class="container">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      			</button>
+    		</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav">
+			        <li class="dropdown dropdown-large" >
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cертификация <span class="caret"></span></a>
+			          <ul class="dropdown-menu dropdown-menu-large row col-md-12" id="dropdown-large">
+							<li class="col-md-4 col-sm-4">
+								<ul>
+									<li class="dropdown-header">Cертификация СМК</li>
+									<li><a href="#">Сертификаты ИСО</a></li>
+									<li><a href="#">Сертификаты ХАССП</a></li>
+									<li class="dropdown-header">Сертификация товаров</li>
+									<li><a href="#">ТР ТС</a></li>
+									<li><a href="#">Отказные письма</a></li>
+									<li class="dropdown-header">Регламенты таможенного союза</li>
+									<li><a href="#">ТР ТС 004/2011</a></li>
+									<li><a href="#">ТР ТС 005/2011</a></li>
+									<li><a href="#">ТР ТС 007/2011</a></li>
+									<li><a href="#">ТР ТС 008/2011</a></li>
+									<li><a href="#">ТР ТС 009/2011</a></li>
+									<li><a href="#">ТР ТС 0010/2011</a></li>
+									<li><a href="#">ТР ТС 0011/2011</a></li>
+									<li><a href="#">ТР ТС 0012/2011</a></li>
+									<li><a href="#">ТР ТС 0013/2011</a></li>
+									<li><a href="#">ТР ТС 0015/2011</a></li>
+									<li><a href="#">ТР ТС 0016/2011</a></li>
+								</ul>
+							</li>
+							<li class="col-md-4 col-sm-4">
+								<ul>
+									<li class="dropdown-header">Сертификация услуг</li>
+									<li><a href="#">Подтверждение соответствия</a></li>
+									<li><a href="#">Сертификат соответствия</a></li>
+									<li><a href="#">Таможенного союза</a></li>
+									<li><a href="#">Декларация соответствия Таможенного союза</a></li>
+									<li><a href="#">Сертификат соответствия ГОСТ Р</a></li>
+									<li><a href="#">Пожарный сертификат</a></li>
+									<li><a href="#">Сертификат ГАЗПРОМСЕРТ</a></li>
+									<li><a href="#">Сертификат взрывозащиты ЕХ</a></li>
+									<li><a href="#">Сертификат сейсмостойкости</a></li>
+									<li><a href="#">СДС 'СертПромБезопасность'</a></li>
+									<li><a href="#">Свидетельство о госрегистрации(СГР)</a></li>
+									<li><a href="#">Экспертное заключение</a></li>
+									<li><a href="#">Сертификация спортивных объектов</a></li>
+									<li><a href="#">Обязательная сертификация ворот</a></li>
+									<li><a href="#">Испытание стеллажей для склада</a></li>
+									<li><a href="#">Свидетельство СБКТС</a></li>
+									<li><a href="#">Сертификат СДС ЭКСЕРТ</a></li>
+									<li><a href="#">Сертификат Речного и Морского Регистров</a></li>
+									<li><a href="#">Экологический сертификат</a></li>
+								</ul>
+							</li>
+							<li class="col-md-4 col-sm-4">
+								<ul>
+									<li class="dropdown-header">Сертификация средств измерений</li>
+									<li><a href="#">Проверка средств измерений и приборов</a></li>
+									<li><a href="#">Свидетельство об утверждении типа средств измерений</a></li>
+									<li class="dropdown-header">ГАЗПРОМСЕРТ</li>
+									<li><a href="#">Сертификат ГАЗПРОСЕРТ</a></li>
+									<li><a href="#">Сертификат СМК ГАЗПРОМСЕРТ</a></li>
+									<li><a href="#">Сертификация услуг в системе ГАЗПРОМСЕРТ</a></li>
+									<li><a href="#">Реестр энергетического оборудования</a></li>
+									<li class="dropdown-header">Для экспорта</li>
+									<li><a href="#">СЕ маркировка</a></li>
+									<li><a href="#">Международный сертификат TUV Austria</a></li>
+									<li class="dropdown-header">Добровольная сертификация</li>
+									<li><a href="#">Оценка опыта и деловой репутации</a></li>
+									<li><a href="#">Классификация гостиниц</a></li>
+									<li><a href="#">Независимая Российская Сертификация Услуг(НРСУ)</a></li>
+								</ul>
+							</li>
+						</ul>
+			        </li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Лицензирование <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">lorem action </a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">One more separated link</a></li>
+			          </ul>
+			        </li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Аттестация<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">One more separated link</a></li>
+			          </ul>
+			        </li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Допуски <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">One more separated link</a></li>
+			          </ul>
+			        </li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Декларации<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">One more separated link</a></li>
+			          </ul>
+			        </li>
+			        <li>
+			        	<div class="col-sm-12 col-xs-12 col-md-12">
+		        			<form class="navbar-form" role="search">
+		        				<div class="input-group">
+		            				<input type="text" class="form-control" name="q">
+		            				<div class="input-group-btn">
+		                				<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+		            				</div>
+		        				</div>
+		        			</form>
+	    				</div>
+			        </li>
+    		   		<li class="right-link-navbar"><a href="#" class="right-link">Учебный центр</a></li>
+    			
+    			
+		     </ul>
+    	 </div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="first-section">
+		<div class="container">
+			<div class="row">
+				<div class="logo">
+					<div class="col-md-2 col-xs-12 col-sm-12 col-centered">
+						<p><img src="img/logo.png"></p> 
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 first-section-item-2 col-centered">
+					<div class="row">
+						<div class="col-md-2 col-md-offset-1 col-sm-12">
+						  <p><img src="img/first-section-icon-1.png" class="first-section-img"> Главная</p>
+						</div>	
+						<div class="col-md-6 col-sm-12">
+							<p><img src="img/first-section-icon-3.png"> Партнерская программа</p>
+						</div>
+						<div class="col-md-3 col-sm-12">
+							<p><img src="img/first-section-icon-5.png"> Отзыв</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-md-offset-1 col-sm-12">
+						  <p><img src="img/first-section-icon-2.png"> О нас</p>
+						</div>	
+						<div class="col-md-6 col-sm-12">
+							<p><img src="img/first-section-icon-4.png" class="first-section-img"> Блог</p>
+						</div>
+						<div class="col-md-3 col-sm-12">
+							<p><img src="img/first-section-icon-6.png" class="first-section-img"> Контакты</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="first-section-item-3">
+							<p>
+								<img src="img/first-section-icon-7.png">
+								<b>8 (800) 775 81 64</b>
+								<p>Москва, ул.Новорязанская, д.18,</p> 
+								<p>БЦ «Stendhal» <a href="">moscow@isorus.ru</a></p>
+							</p>
+						</div>
+						
+						<div class="first-section-item-3-block-1">
+							<h5>Закажи обратный звонок</h5>
+						</div>
+						<div class="first-section-item-3-block-2">
+							<div class="row">
+								<div class="col-md-6">
+									<p style="float: left; font-style: italic;">Номер телефона</p>	
+								</div>
+								<div class="col-md-6">
+									<button><a href="#twelfth-section-item-1-2">Заказать</a></button> 
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar" id="header2">
+  		<div class="container">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+	        		<span class="glyphicon glyphicon-menu-hamburger"></span>
+      			</button>
+    		</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      		<ul class="nav navbar-nav">
+        		<li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Разрешительная документация <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Изменение разрешенного использования земельного участка</a></li>
+		            <li><a href="#">Техничские условия на присоединение к сетям инженерного обеспечения</a></li>
+		            <li><a href="#">Градостроительный план земельного участка</a></li>
+		            <li><a href="#">Заключение госудрасвтенной экспертизы проекта</a></li>
+		            <li><a href="#">Разрещение на строительство</a></li>
+		            <li><a href="#">Разрешение на ввод объекта в эксплуатацию</a></li>
+		          </ul>
+        		</li>
+        		<li><a href="#fourth-section">Промышленная безопасность</a></li>
+				<li><a href="#third-section">Пожарная безопасность</a></li>
+				<li><a href="#fifth-section">СТУ</a></li>
+				<li><a href="#eighth-section">Охрана труда</a></li>
+				<li><a href="#sixth-section">Электролаборатория</a></li>
+				<li><a href="#sixth-section">Реестр СДС</a></li>
+				<li><a href="#sixth-section">Реестр СРО</a></li>
+      		</ul>
+     </div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="second-section">
+		<div class="container">
+			<div class="row">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="carousel slide" data-ride="carousel" id="quote-carousel-second-section">
+				       		<div class="carousel-inner">
+				       			<ol class="carousel-indicators">
+					            	<li data-target="#quote-carousel-second-section" data-slide-to="0" class="active"></li>
+					                <li data-target="#quote-carousel-second-section" data-slide-to="1"></li>
+                				</ol>
+				         		<div class="item active">
+				         			<div class="wrapper-main">
+										<img src="img/second-section-img-1.png" alt="" class="second-section-image-1 img-thumbnail" >
+										<div class="main-overlay">
+											<h3>Первый текст <span> третий в подарок</span></h3>
+										</div>
+									</div>
+				         		</div>
+				         		<div class="item">
+				         			<div class="wrapper-main">
+										<img src="img/second-section-img-1.png" alt="" class="second-section-image-1 img-thumbnail" >
+										<div class="main-overlay">
+											<h3>Второй текст <span> третий в подарок</span></h3>
+										</div>
+									</div>
+				         		</div>
+				         	</div>
+				         </div>
+						
+						
+					</div>
+					<div class="col-md-6 col-centered">
+						<div class="row ">
+							<div class="col-md-6 col-sm-6 col-xs-12 ">
+								<div class="wrapper">
+									<img src="img/second-section-img-2.png" alt="" class=" second-section-image-2 img-thumbnail" >
+								  	<div class="overlay">
+								    	<h5>Список исключенный компаний из реестра СРО</h5>
+								    </div>
+								    <div class="overlay-hover">
+								    	<span>12/12/2016</span>
+								    	<h5>Специальная оценка условий труда</h5>
+								    	<p>Смысл введения процедуры в том,чтобы система предосталения льгот и гарантий в этом</p>
+								    	<button>подробнее</button>
+								    </div>
+								</div>
+                    		</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 " style="padding-left: 0px;">
+								
+								<div class="wrapper">
+									<img src="img/second-section-img-3.png" alt="" class=" second-section-image-3 img-thumbnail" >
+								  	<div class="overlay">
+								    	<h5>Оформляем сертификат ISO 22000 HASP</h5>
+								      
+								  	</div>
+								  	 <div class="overlay-hover">
+								    	<span>12/12/2016</span>
+								    	<h5>Специальная оценка условий труда</h5>
+								    	<p>Смысл введения процедуры в том,чтобы система предосталения льгот и гарантий в этом</p>
+								    	<button>подробнее</button>
+								    </div>
+								</div>
+                    		</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="wrapper">
+									<img src="img/second-section-img-4.png" alt="" class=" second-section-image-3 img-thumbnail" >
+								  	<div class="overlay">
+								    	<h5>Переофрмление сертификата ISO</h5>
+								    </div>
+								     <div class="overlay-hover">
+								    	<span>12/12/2016</span>
+								    	<h5>Специальная оценка условий труда</h5>
+								    	<p>Смысл введения процедуры в том,чтобы система предосталения льгот и гарантий в этом</p>
+								    	<button>подробнее</button>
+								    </div>
+								</div>
+							</div>
+							
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="wrapper">
+									<img src="img/second-section-img-5.png" alt="" class=" second-section-image-3 img-thumbnail" >
+								  	<div class="overlay">
+								    	<h5>Переофрмление сертификата ISO</h5>
+								      
+								  	</div>
+								  	 <div class="overlay-hover">
+								    	<span>12/12/2016</span>
+								    	<h5>Переофрмление сертификата ISO</h5>
+								    	<p>Смысл введения процедуры в том,чтобы система предосталения льгот и гарантий в этом</p>
+								    	<button>подробнее</button>
+								    </div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="third-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12 col-centered">
+					<div class="title">
+						<h6>Всероссийский центр сертификации</h6>
+						<h2>Наши преимущества</h2>	
+					</div>
+				</div>
+			</div><br>
+			<div class="row row-centered">
+				<div class="container">
+					<div class="flex-container">
+						<div class="third-section-image">
+							<img src="img/third-section-icon-1.png">
+							<h5>Оплата в рассрочку</h5>
+							<p>Цена оформления сертификата ИСО вас приятно удивит! Оплата может производиться в рассрочку</p>	
+						</div>
+						<div class="third-section-image">
+							<img src="img/third-section-icon-2.png ">
+							<h5>Многолетний опыт</h5>
+							<p>Мы работаем в этой области более трех лет. За это время наша компания накопила большой опыт.</p>
+						</div>
+						<div class="third-section-image" style="margin-top: 5px;">
+							<img src="img/third-section-icon-3.png">
+							<h5>Спектр услуг</h5>
+							<p>Мы оказываем весь спектр услуг, гарантируя клиентам комплексный подход и индивидуальные решения.</p>
+						</div>
+						<div class="third-section-image">
+							<img src="img/third-section-icon-4.png">
+							<h5>Наша команда</h5>
+							<p>Профессиональные эксперты и аудиторы, которые помогут вам не просто получить ISO, но и внедрить СМК на предприятии.</p>
+						</div>
+						<div class="third-section-image">
+							<img src="img/third-section-icon-5.png">
+							<h5>Подарок при заказе</h5>
+							<p>При заказе 2х сертификатов ИСО - третий вы получаете в подарок. Мы доставляем сертификаты бесплатно</p>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div><br>
+	<div id="fourth-section">
+		<div class="container">
+			<div class="fourth-section-back">
+				<div class="fourth-section-hover">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12 col-centered">
+							<div class="title">
+								<h6>Всероссийский центр сертификации</h6>
+								<h2>Пресса о нас</h2>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class='col-md-12'>
+      						<div class="carousel slide" data-ride="carousel" id="quote-carousel-fourth-section">
+      							<ol class="carousel-indicators">
+						            	<li data-target="#quote-carousel-fourth-section" data-slide-to="0" class="active"></li>
+						                <li data-target="#quote-carousel-fourth-section" data-slide-to="1"></li>
+                					</ol>
+				         		<div class="carousel-inner">
+				         			
+					         		<div class="item active">
+					            		
+					            			<div class="col-md-4 col-sm-12 col-xs-12 col-centered">
+												<h4 style="color: #fff;">ИСО-твой надежный помощник в мире финансов</h4>
+												<p>Мы живем в век непрерывного потока информации и новостей, за которыми внимательно следит весь мир. Одних интересуют последние события в мире спорта, другие следят за развитием событий на мировой политической арене. </p>
+												<div class="pull-right" style="padding-right: 15px;">
+													<i>Singapore Business Review</i>
+													<p><i>(,2013)</i></p>
+												</div>
+											</div>
+											<div class="col-md-4 col-sm-12 col-xs-12  col-centered">
+												<h4 style="color: #fff;">Превосходство известное во всем мире</h4>
+												<p>Эксперты и опытные трейдеры советуют отдавать предпочтение ведущим компаниям, чей многолетний опыт подкреплен обширной клиентской базой и известным брендом. Сегодняшняя статья посвящена компании ВЦС,</p>
+												<div class="pull-right" style="padding-right: 15px;">
+													<i>Capital Finance International</i>
+													<p><i>(,2015)</i></p> 	
+												</div>	
+											</div>
+											<div class="col-md-4 col-sm-12 col-xs-12  col-centered">
+												<h4 style="color: #fff;">Адаптация к интенсивному рынку и конкуренции</h4>
+												<p>Это была такая ситуация, что какое бы нововведение мы не  внедрили, то значительно бы увеличили клиентскую базу, потому что мы были одними из первых,</p> 
+												<p>кто понимал потенциал рынка индивидуальных коммерческих операций, особенно в Азии.</p> 
+												<div class="pull-right col-centered" style="padding-right: 15px;">
+													<i>Журнал “World Finance"</i> 
+													<p><i>(,2015)</i></p> 
+												</div>
+											</div>
+					             		
+					          		</div>
+					          <div class="item">
+					          		<div class="col-md-4 col-sm-12 col-xs-12 col-centered">
+										<h4 style="color: #fff;">ИСО-твой надежный помощник в мире финансов</h4>
+										<p>Мы живем в век непрерывного потока информации и новостей, за которыми внимательно следит весь мир. Одних интересуют последние события в мире спорта, другие следят за развитием событий на мировой политической арене. </p>
+										<div class="pull-right" style="padding-right: 15px;">
+											<i>Singapore Business Review</i>
+											<p><i>(,2013)</i></p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-12 col-xs-12  col-centered">
+										<h4 style="color: #fff;">Превосходство известное во всем мире</h4>
+										<p>Эксперты и опытные трейдеры советуют отдавать предпочтение ведущим компаниям, чей многолетний опыт подкреплен обширной клиентской базой и известным брендом. Сегодняшняя статья посвящена компании ВЦС,</p>
+										<div class="pull-right" style="padding-right: 15px;">
+											<i>Capital Finance International</i>
+											<p><i>(,2015)</i></p> 	
+										</div>	
+									</div>
+									<div class="col-md-4 col-sm-12 col-xs-12  col-centered">
+										<h4 style="color: #fff;">Адаптация к интенсивному рынку и конкуренции</h4>
+										<p>Это была такая ситуация, что какое бы нововведение мы не  внедрили, то значительно бы увеличили клиентскую базу, потому что мы были одними из первых,</p> 
+										<p>кто понимал потенциал рынка индивидуальных коммерческих операций, особенно в Азии.</p> 
+										<div class="pull-right col-centered" style="padding-right: 15px;">
+											<i>Журнал “World Finance"</i> 
+											<p><i>(,2015)</i></p> 
+										</div>
+									</div>
+					          </div>
+					          
+        					</div>
+   
+      					</div>                          
+    				</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					
+					<div class="col-md-4 col-sm-12 col-xs-12 row-centered">
+						<button>
+							Появился вопрос? Задайте его.
+						</button>	
+					</div>
+					
+				</div><br>
+			</div>
+		</div>
+	</div>
+	<div id="fifth-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12 col-centered">
+					<div class="title">
+						<h6>Всероссийский центр сертификации</h6>
+						<h2>О НАС: Сертификаты, аккредитации и лицензии</h2>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container">
+					<div class="col-md-6 col-xs-12 col-sm-6">
+						<h4>Мы являемся аккредитованным органом по сертификации. Аккредитованы в Федеральном агентстве по техническому регулированию и метрологии. Наш регистрационный номер <a href="">№РОСС RU.31172.04ЖНГ0.</a></h4>
+						<h4>Некоторым компаниям подтверждение внедрения СМК нужно прямо сейчас. Необходимо срочно подать заявку на тендер или кредит, в этой ситуации времени для получения сертификата ИСО практически нет. А ведь качественный аудит и разработка СМК – трудоемкий и не самый быстрый процесс.</h4>
+					</div>
+					<div class="col-md-6 col-xs-12 col-sm-6">
+						<h4>В таких условиях многие компании обращаются к услугам фирм, предлагающих купить сертификат ИСО на выгодных условиях. Это дешевле и занимает буквально пару дней.</h4>
+						<h4>Если у вас нет времени ждать получения сертификата ИСО с полноценным внедрением это, конечно, выход. При условии обращения в аккредитованный орган, процедура выдачи является полностью законной. Однако с позиции профессионалов мы честно предупреждаем: покупая сертификат ИСО, вы приобретаете только оболочку и имидж. Никакой оптимизации внутренних процессов ждать не стоит.</h4>
+					</div>
+				</div>	
+			</div><br>
+			<div class="row">
+				<div class="col-md-6 col-sm-12 col-xs-12" id="fifth-section-item-1">
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12" id="fifth-section-item-2">
+					<div class="fifth-section-item-2-sub">
+						<h5>Мы - аккредитованный центр сертификации.</h5>
+						<h3>Как проверить подтвержденные полномочий нашего Органа</h3>
+						<h6>На сайте gost.ru, выберите пункт «Подтверждение соответствия», затем «Системы 		добровольной сертификации»
+							Нажмите на кнопку «Поиск». В поле поиска введите: «Всероссийский Центр Сертификации», нажмите кнопку найти
+							Самый первый результат в поиске — это мы
+						</h6>
+					</div>
+				</div>
+		</div>
+		</div>
+	</div><br>
+	<div id="sixth-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12 col-centered">
+					<div class="title">
+						<h6>Всероссийский центр сертификации</h6>
+						<h2>Наша команда</h2>	
+					</div>
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="container">
+					<div class="flex-container">
+						<div class=" sixth-section-image">
+							<img src="img/sixth-section-icon-1.png">
+							<h2>150</h2>
+							<h4>Экспертов</h4>
+							<p>работает у нас</p> 
+						</div>
+						<div class=" sixth-section-image">
+							<img src="img/sixth-section-icon-2.png">
+							<h2>28</h2>
+							<h4>Офисов</h4>
+							<p>в 7 регионах</p>
+						</div>
+						<div class="sixth-section-image">
+							<img src="img/sixth-section-icon-3.png">
+							<h2>17</h2>
+							<h4>Представителей</h4>
+							<p>с многолетним опытом</p> 
+						</div>
+						<div class=" sixth-section-image">
+							<img src="img/sixth-section-icon-4.png">
+							<h2>1509</h2>
+							<h4>Сертификатов</h4>
+							<p>Мы выдали за 2016 год</p> 
+						</div>
+						<div class=" sixth-section-image">
+							<img src="img/sixth-section-icon-5.png">
+							<h2>300</h2>
+							<h4>Клиентов</h4>
+							<p>Получили сертификаты</p> 
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="seven-section">
+		
+			<div class='row'>
+    			<div class='col-md-12'>
+      				<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+				         <div class="carousel-inner">
+					         <div class="item active">
+					            <div class="row">
+					            	<div class="container">
+					            		<div class="col-md-6">
+					            			<div class="row">
+					            				<div class="col-md-6">
+					            					<img class="img-thumbnail" src="img/seven-section-img-1.png">
+					            				</div>
+					            				<div class="col-md-6">
+					            					<h4>Колосов Георгий</h4>
+					            					<p>
+					            						Ведущий эксперт по сертификации систем менеджмента качества, систем экологического менеджмента, систем менеджмента безопасности труда и охраны здоровья
+					            					</p> 
+					            					<button>Задать вопрос эксперту</button>	
+					            				</div>
+					            			</div>
+					            		</div>
+					            		<div class="col-md-6">
+					            			<div class="row">
+					            				<div class="col-md-6">
+					            					<img class="img-thumbnail" src="img/seven-section-img-2.png">
+					            				</div>
+					            				<div class="col-md-6">
+						            				<h4>Колосов Георгий</h4>
+					            					<p>
+					            						Ведущий эксперт по сертификации систем менеджмента качества, систем экологического менеджмента, систем менеджмента безопасности труда и охраны здоровья
+					            					</p> 
+					            					<button>Задать вопрос эксперту</button>		
+					            				</div>	
+					            			</div>
+					            		</div>
+					            	</div>
+					            	
+					             </div>
+					          </div>
+					          <div class="item">
+					            <div class="row">
+					            	<div class="container">
+					            		<div class="col-md-6">
+					            			<div class="row">
+					            				<div class="col-md-6">
+					            					<img class="img-thumbnail" src="img/seven-section-img-1.png">
+					            				</div>
+					            				<div class="col-md-6">
+					            					<h4>Колосов Георгий</h4>
+					            					<p>
+					            						Ведущий эксперт по сертификации систем менеджмента качества, систем экологического менеджмента, систем менеджмента безопасности труда и охраны здоровья
+					            					</p> 
+					            					<button>Задать вопрос эксперту</button>		
+					            				</div>
+					            			</div>
+					            		</div>
+					            		<div class="col-md-6">
+					            			<div class="row">
+					            				<div class="col-md-6">
+					            					<img class="img-thumbnail" src="img/seven-section-img-2.png">
+					            				</div>
+					            				<div class="col-md-6">
+						            				<h4>Колосов Георгий</h4>
+					            					<p>
+					            						Ведущий эксперт по сертификации систем менеджмента качества, систем экологического менеджмента, систем менеджмента безопасности труда и охраны здоровья
+					            					</p>
+					            					<button>Задать вопрос эксперту</button>	 
+					            				</div>	
+					            			</div>
+					            		</div>
+					            	</div>
+					            	
+					             </div>
+					          </div>
+					          <div class="item">
+					            <div class="row">
+					            	<div class="container">
+					            		<div class="col-md-6">
+					            			<div class="row">
+					            				<div class="col-md-6">
+					            					<img class="img-thumbnail" src="img/seven-section-img-1.png">
+					            				</div>
+					            				<div class="col-md-6">
+					            					<h4>Колосов Георгий</h4>
+					            					<p>
+					            						Ведущий эксперт по сертификации систем менеджмента качества, систем экологического менеджмента, систем менеджмента безопасности труда и охраны здоровья
+					            					</p> 	
+					            					<button>Задать вопрос эксперту</button>	
+					            				</div>
+					            			</div>
+					            		</div>
+					            		<div class="col-md-6">
+					            			<div class="row">
+					            				<div class="col-md-6">
+					            					<img class="img-thumbnail" src="img/seven-section-img-2.png">
+					            				</div>
+					            				<div class="col-md-6">
+						            				<h4>Колосов Георгий</h4>
+					            					<p>
+					            						Ведущий эксперт по сертификации систем менеджмента качества, систем экологического менеджмента, систем менеджмента безопасности труда и охраны здоровья
+					            					</p>
+					            					<button>Задать вопрос эксперту</button>	 
+					            				</div>	
+					            			</div>
+					            		</div>
+					            	</div>
+					            	
+					             </div>
+					          </div>
+        					</div>
+        
+					        <!-- Carousel Buttons Next/Prev -->
+					        <a data-slide="prev" href="#quote-carousel" class="left carousel-control">
+					        	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    		<span class="sr-only">Previous</span>
+					        </a>
+					        <a data-slide="next" href="#quote-carousel" class="right carousel-control">
+					        	 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    		 <span class="sr-only">Next</span>
+					        </a>
+      					</div>                          
+    				</div>
+  				</div></div>
+	<div id="eighth-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-centered" id="eighth-section-item-1">
+					<div class="eighth-section-item-1-hover">	
+						<div class="eighth-section-item-1-title">
+							<p>Всероссийский центр сертификации</p>
+							<h2>Как получить сертификат</h2>	
+						</div>
+						<h4>За время работы «Единый центр сертификации» зарекомендовал себя как надежный и ответственный партнер. Профессионализм – это то, что на что мы сделали ставку. В нашей компании трудятся высококвалифицирован- ные специалисты с большим опытом работы в сфере сертификации и стандартизации.</h4> 
+					</div>
+					
+				</div>
+				<div class="col-md-6 col-centered" id="eighth-section-item-2">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 col-centered">
+							<h2>Наше кредо</h2>
+							<ul>
+								<li><span>Надежность</span></li>
+								<li><span>Ответственность</span></li>
+								<li><span>Гибкость</span></li>
+								<li><span>Лояльность</span></li>
+								<li><span>Профессионализм</span></li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<img src="img/eighth-section-img-2.png" class="img-thumbnail">
+							<p>Мы верим в то, что залог нашего успеха -  в предоставлении профессионального, качественного и персонального обсдуживания, а также в построении крепких и продолжительных отношений с нашими клиентами на основе полного доверия и конфиденциальности</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div id="nineth">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-centered">
+					<div class="title">
+						<h6>Всероссийский центр сертификации</h6>
+						<h2>Зачем нужна сертификация?</h2>	
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-centered">
+						<div class="row">
+							<div class="col-md-2">
+								<p><img src="img/nine-section-icon-1.png" class="nine-section-image"></p> 
+							</div>
+							<div class="col-md-10">
+								<div class="nine-section-text">
+									<h5>1.Этот документ является пропуском на государственные тендеры и заказы</h5>
+									<h5>Компании, не прошедшие сертификацию ИСО, как правило не допускаются даже до участия</h5>	
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2">
+								<p><img src="img/nine-section-icon-2.png" class="nine-section-image"></p> 
+							</div>
+							<div class="col-md-10">
+								<div class="nine-section-text">
+									<h5>2.Лицензирование в отдельных видах деятельности требует получение сертификата ISO</h5>
+									<h5>В первую очередь это касается допуска СРО на особо опасные работы</h5>
+								</div>
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-2">
+								<p><img src="img/nine-section-icon-3.png" class="nine-section-image"></p> 
+							</div>
+							<div class="col-md-10">
+								<div class="nine-section-text">
+									<h5>3.Повышение инвестиционной привлекательности</h5>
+									<h5>Получив ИСО,компания может предоставить юридическое подтверждения своей надежности и стабильного положения на рынке.</h5>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2">
+								<p><img src="img/nine-section-icon-4.png" class="nine-section-image"></p> 
+							</div>
+							<div class="col-md-10">
+								<div class="nine-section-text">
+									 <h5>4.Выгодные условия факторинга и страхования</h5>
+									 <h5>Многие предприятии стремятся получить ISO для того,чтобы продемонстрировать партнероам отсутствие рисков. Как показывает практика, сертификаты отлично справляются с этой задачей </h5>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2">
+								<p><img src="img/nine-section-icon-5.png" class="nine-section-image"></p> 
+							</div>
+							<div class="col-md-10">
+								<div class="nine-section-text">
+									<h5>5.PR и привлекательность для клиентов</h5>
+									<h5>Получить ISO стоит хотя бы для того, чтобы проверить степень доверия потребителей и бизнес-партнеров. Этот сертификат имеет громокое международное имя. Упоминая его, вы вносите весомый вклад в репутацию вашего бренда.</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-6 col-sm-12 item-centered centered">
+						<div class="carousel slide" data-ride="carousel" id="quote-carousel-nine-section">
+				         		<div class="carousel-inner">
+				         			<ol class="carousel-indicators">
+					                    <li data-target="#quote-carousel-nine-section" data-slide-to="0" class="active"></li>
+					                    <li data-target="#quote-carousel-nine-section" data-slide-to="1"></li>
+                					</ol>
+					         		<div class="item active">
+					         			<img src="img/nine-section-img-1.png" >
+										<div class="nine-section-item-3-block" >
+											<div class="nine-section-item-3-block-text">
+												<p>Возможность предъявить сертификат ИСО 0001 - лучшая рекомендация и официальное подтверждение качества</p><br>
+											</div>
+											<span>А.А.Вострецов</span><br>
+											<span>Эксперт сертификации ИСО</span><br>
+										</div>
+					         		</div>
+					         		<div class="item">
+					         			<img src="img/nine-section-img-1.png" >
+										<div class="nine-section-item-3-block" >
+											<div class="nine-section-item-3-block-text">
+												<p>Возможность предъявить сертификат ИСО 0001 - лучшая рекомендация и официальное подтверждение качества</p><br>
+											</div>
+											<span>А.А.Комаров</span><br>
+											<span>Просто эксперт</span><br>
+										</div>
+					         		</div>
+					         	</div>
+					     </div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>	 
+	<div id="tenth">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-xs-12 col-sm-12 col-centered">
+					<div class="title">
+						<h6>Всероссийский центр сертификации</h6>
+						<h2>Отзывы и референции</h2>	
+					</div>
+				</div>
+			</div>
+			<div class="row tenth-images">
+					<div class="col-md-2 col-sm-4 col-xs-12">
+						<img src="img/tenth-section-icon-3.png" >
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-12">
+						<img src="img/tenth-section-icon-5.png" >
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-12">
+						<img src="img/tenth-section-icon-1.png">
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-12">
+						<img src="img/tenth-section-icon-2.png">
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-12">
+						<img src="img/tenth-section-icon-6.png">
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-12">
+						<img src="img/tenth-section-icon-4.png" >
+					</div><br>
+				
+			</div>
+		</div>
+	</div> 	
+	<div id="eleventh-section">	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 eleventh-section">
+					<div class="row">
+						<div class="carousel slide" data-ride="carousel" id="quote-carousel-eleventh-section">
+							<ol class="carousel-indicators">
+					            	<li data-target="#quote-carousel-eleventh-section" data-slide-to="0" class="active"></li>
+					                <li data-target="#quote-carousel-eleventh-section" data-slide-to="1"></li>
+                			</ol>
+				        	<div class="carousel-inner">
+				        		
+					         	<div class="item active">
+					         		<div class="col-md-2">
+										<div class="eleventh-section-item-1">
+											<img src="img/elleventh-section-icon-1.png" alt="" class="centered"> 
+										</div>
+									</div>
+									<div class="col-md-10">
+										<div class="eleventh-section-text">
+											<p>
+												“Еще в самом начале нашей деятельности мы решили сделать ставку на качество предоставляемых нами услуг. Ведь в туристическом бизнесе, как и в любом другом, качество услуг – это основное условие, которое позволит сохранить имеющихся и расширить круг потенциальных клиентов.”
+											</p>
+										</div>
+										<div class="pull-right" style="margin-bottom: 20px;">
+											<span>Исполнительный директор С.А.Кузнецов</span><br>
+											<span class="eleventh-section-text-span">Туристическая компания Gaudi Exclusive</span>	<br>
+										</div>
+									</div>		
+					         	</div>
+					         	<div class="item">
+					         		<div class="col-md-2">
+										<div class="eleventh-section-item-1">
+											<img src="img/elleventh-section-icon-1.png" alt="" class="centered"> 
+										</div>
+									</div>
+									<div class="col-md-10">
+										<div class="eleventh-section-text">
+											<p>
+												“Еще в самом начале нашей деятельности мы решили сделать ставку на качество предоставляемых нами услуг. Ведь в туристическом бизнесе, как и в любом другом, качество услуг – это основное условие, которое позволит сохранить имеющихся и расширить круг потенциальных клиентов.”
+											</p>
+										</div>
+										<div class="pull-right" style="margin-bottom: 20px;">
+											<span>Исполнительный директор С.А.Кузнецов</span><br>
+											<span class="eleventh-section-text-span">Туристическая компания Gaudi Exclusive</span>	<br>
+										</div>
+									</div>		
+					         	</div>
+					         </div>
+					     </div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="twelfth-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="twelfth-section-item-1">
+						<div class="col-md-6">
+							<img src="img/twelfth-section-icon-1.png" alt="" >
+							<h4>Третий сертификат ИСО</h4>
+							<h4>Бесплатно</h4>	
+						</div>
+						<div class="col-md-6 col-xs-12 col-sm-12" style="margin-top: 26px;">
+							<img src="img/twelfth-section-icon-2.png" alt="" >
+							<h4>Доставка по России</h4>
+							<h4>Бесплатно</h4>
+						</div>	
+					</div>
+				</div><br>
+				<div class="form-container">
+					<div class="col-md-6 col-xs-12 col-sm-12 col-lg-6" id="twelfth-section-item-1-2">
+
+					<div class="twelfth-section-form-title">
+						<p>Всероссийский центр сертификации</p>
+						<h4>Как получить сертификат</h4>	
+					</div><br>
+					<form action="" method="post" class="form-horizontal">
+						<div class="text-center">
+							<input type="hidden" name="comb_goods_amount" value="1" id="comb_goods_amount">
+							<input type="hidden" name="comb_cookie_hash" value="">
+							<input type="hidden" name="comb_get_hash" id="comb_get_hash" value="<?php echo (!empty($_GET['hash']) ? $_GET['hash'] : ''); ?>">
+							<input type="hidden" name="comb_user_data" id="comb_user_data" value="">
+							<div class="form-group">
+								<div class="col-md-2  col-xs-3">
+									<label for="inputEmail3">Услуга:</label>	
+								</div>
+								<div class="col-md-8 col-xs-8 col-lg-8">
+									<select class="form-control" id="inputPassword3">
+		  								<option>Пункт 1</option>
+		  								<option>Пункт 2</option>
+		  								<option>Пункт 2</option>
+									</select>
+								</div>
+							</div>
+						    <div class="form-group">
+						    	<div class="col-md-2 col-xs-3">
+						    		<label for="inputPassword3" >Имя:</label>	
+						    	</div>
+								
+								<div class="col-md-8 col-xs-8 col-lg-8">    
+		  							<input type="text" class="form-control" id="inputPassword3" placeholder="Имя контактного лица">
+		  						</div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="col-md-2 col-xs-3 ">
+						    		<label for="inputPassword3" >Отчество:</label>	
+						    	</div>
+						    	
+								<div class="col-md-8 col-xs-8 col-lg-8">
+		  							 <input type="text" class="form-control" id="inputPassword3" placeholder="Отчество контактного лица">
+		  					   </div>
+							</div>
+							<div class="form-group">
+								
+									<div class="col-md-2 col-xs-3 ">
+										<label for="inputPassword3">Фамилия:</label>	
+									</div>
+									
+									<div class="col-md-8 col-xs-8 col-lg-8 ">
+										<input type="text" class="form-control" id="inputPassword3" placeholder="фамилия контактного лица">
+									</div>
+								
+								
+							</div>
+							<div class="form-group">
+								<div class="col-md-2 col-xs-3 ">
+									<label for="inputPassword3">E-mail:</label>	
+								</div>
+								
+								<div class="col-md-8 col-xs-8 col-lg-8 ">
+		  							<input type="email" class="form-control" id="inputPassword3" placeholder="Адрес электронной почты">
+		  						</div>
+		  					</div>
+							<div class="form-group">
+								<div class="col-md-2 col-xs-3 ">
+									<label for="inputPassword3" >Телефон:</label>	
+								</div>
+								<div class="col-md-8 col-xs-8 col-lg-8">
+		  							 <input type="text" class="form-control" id="inputPassword3" placeholder="Номер телефона">
+		  						 </div>
+		  					</div>
+							<div class="form-group">
+								<div class="col-md-2 col-xs-3 ">
+									<label for="inputPassword3" >Компания:</label>	
+								</div>
+								<div class="col-md-8 col-xs-8 col-lg-8">
+		  							 <input type="text" class="form-control" id="inputPassword3" placeholder="Название компании">
+		  						</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-2 col-xs-3 ">
+									<label for="inputPassword3">Комментарий:</label>	
+								</div>
+								<div class="col-md-8 col-xs-8 col-lg-8">
+		  							 <input type="text" class="form-control" id="inputPassword3" placeholder="Комментарий">
+		  						</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-10">
+		  							<button type="submit" class="twelth-section-form-button">Оформить заявку</button>
+		  						</div>
+		  						
+							</div>
+						</div>
+					</form>
+
+				</div>	
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 twelfth-section-item-2 col-centered">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2 centered">
+							<ul>
+								<li><a href="">Cертификация</a></li>
+								<li><a href="">Лицензирование</a></li>
+								<li><a href="">Аттестация</a></li>
+								<li><a href="">Допуски</a></li>
+								<li><a href="">Декларации</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 centered">
+							<ul>
+								<li><a href="">Разрешительная документация</a></li>
+								<li><a href="">Промышленная безопасность</a></li>
+								<li><a href="">Пожарная безопасность</a></li>
+								<li><a href="">СТУ</a></li>
+								<li><a href="">Проектная документация</a></li>
+								<li><a href="">Охрана труда</a></li>
+								<li><a href="">Электролаборатория</a></li>
+								<li><a href="">Реестр СДС</a></li>
+								<li><a href="">Реестр СРО</a></li>
+							</ul>
+						</div>
+						<div class="col-md-1" style="margin-right: 20px;">
+							<ul>
+								<li><a href="">Главная</a></li>
+								<li><a href="">О нас</a></li>
+								<li><a href="">Партнерская программа</a></li>
+								<li><a href="">Блог</a></li>
+								<li><a href="">Отзывы</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row" id="footer">
+						<div class="col-md-2 col-xs-1 centered">
+							<img src="img/twelfth-section-img-2.png">
+						</div><br>
+						<div class="col-md-3 twelfth-section-text centered">
+							<b>тел. 8 (800) 775 81 64</b>
+							<p>Москва, ул.Новорязанская, д.18,</p> 
+							<p>БЦ «Stendhal» <a href="">moscow@isorus.ru</a></p>
+						</div><br>
+						<div class="col-md-3 centered">
+							<button class="twelfth-section-button">Как доехать?</button>
+						</div>
+						<div class="col-md-1 сol-xs-3">
+							<img src="img/vk.png">
+						</div>
+						<div class="col-md-1 сol-xs-3">
+							<img src="img/facebook.png">
+						</div>
+						<div class="col-md-1 сol-xs-3">
+							<img src="img/twitter.png">
+						</div>
+						<div class="col-md-1 сol-xs-3">
+							<img src="img/youtube.png">
+						</div>
+						
+					</div><br><br>
+					<div class="row text-center copyright">
+							<a href="vs-center.ru">vs-center.ru</a><br>
+							<p>ООО "Всероссийский центр сертификации"</p>
+							<p>Copyright 2016 All rights reserved</p>
+					</div><br><br>
+				</div>
+			 </div>
+		</div>
+	</div>			
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	
+</body>
+</html>

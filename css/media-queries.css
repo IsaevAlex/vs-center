@@ -1,0 +1,175 @@
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .fifth-section-item-2-sub {
+    margin: 10px;
+    padding: 9.5px; }
+    .fifth-section-item-2-sub h3 {
+      font-size: 18px; } }
+
+@media screen and (max-width: 1195px) and (min-width: 992px) {
+  #eleventh-section .carousel-indicators {
+    margin-bottom: 10px;
+    margin-left: 430px; }
+  #fourth-section .carousel-indicators {
+    margin-bottom: 300px;
+    margin-left: 400px; }
+  #second-section .carousel-indicators {
+    margin-bottom: 10px;
+    margin-left: 190px; }
+  #eighth-section-item-1 h4:nth-child(2) {
+    padding-bottom: 57px; }
+  .eighth-section-item-1-title h2 {
+    line-height: 1.0; } }
+
+@media (max-width: 1300px) {
+  .navbar-header {
+    float: none; }
+  .navbar-left, .navbar-right {
+    float: none !important; }
+  .navbar-toggle {
+    display: block; }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px; }
+  .navbar-nav > li {
+    float: none; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .collapse.in {
+    display: block !important; }
+  .right-link-navbar {
+    background: none; }
+  .logo img {
+    width: 150px; } }
+
+@media (max-width: 710px) {
+  #fourth-section .carousel-indicators {
+    margin-bottom: 540px;
+    margin-left: 270px; } }
+
+@media (max-width: 990px) and (min-width: 710px) {
+  #eleventh-section .carousel-indicators {
+    margin-bottom: 10px;
+    margin-left: 320px; }
+  #fourth-section .carousel-indicators {
+    margin-bottom: 530px;
+    margin-left: 300px; } }
+
+@media (max-width: 990px) and (min-width: 620px) {
+  #second-section .carousel-indicators {
+    margin-bottom: 10px;
+    margin-left: 270px; } }
+
+@media (max-width: 620px) {
+  #second-section .carousel-indicators {
+    margin-bottom: 10px;
+    margin-left: 200px; } }
+
+@media (max-width: 980px) {
+  .title h2 {
+    line-height: 1.0; }
+  .nine-section-image {
+    margin-right: 0px; }
+  .centered {
+    float: none;
+    margin: 0 auto; }
+  .wrapper .main-overlay {
+    display: block; }
+  .wrapper .overlay {
+    display: block; }
+  #eighth-section-item-1 {
+    background: #408cb8; } }
+
+@media screen and (min-width: 1600px) {
+  .form-container {
+    position: relative; }
+  #twelfth-section-item-1-2 {
+    background-size: cover; }
+  .twelfth-section-item-2 {
+    margin-top: 50px; } }
+
+@media screen and (max-width: 1420px) {
+  #twelfth-section-item-1-2 {
+    background-size: cover; } }
+
+@media screen and (max-width: 1000px) {
+  #third-section, #fifth-section, #sixth-section, #nineth, #tenth .title:after {
+    display: none; }
+  #eighth-section-item-1 h4 {
+    margin-bottom: 0px; }
+  .item-centered {
+    display: flex;
+    flex-wrap: wrap; }
+  #twelfth-section-item-1-2 {
+    margin-top: 150px; }
+  .twelfth-section-item-2 {
+    margin-top: 555px; }
+  .col-centered {
+    text-align: center; }
+  .logo {
+    margin-bottom: 60px; } }
+
+@media screen and (max-width: 750px) {
+  .item-centered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  #second-section .col-md-6:nth-child(1) {
+    padding-left: 0px; }
+  .wrapper .main-overlay {
+    height: 60%; }
+  .carousel-inner .col-md-6:nth-child(1) {
+    margin-bottom: 20px; } }
+
+@media screen and (min-width: 750px) and (max-width: 770px) {
+  .item-centered {
+    display: flex;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  #fifth-section-item-1 {
+    padding: 120px 0; } }
+
+@media screen and (max-width: 500px) {
+  #fifth-section-item-1 {
+    padding: 100px 0; } }
+
+@media screen and (max-width: 400px) {
+  #fifth-section-item-1 {
+    padding: 80px 0; } }
+
+/**
+  MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #quote-carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px; } }
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+  .twelfth-section-item-2 {
+    margin-top: 580px; }
+  .tenth-images img {
+    margin-bottom: 30px; }
+  /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+  #quote-carousel .carousel-indicators {
+    bottom: -20px !important; }
+  #quote-carousel .carousel-indicators li {
+    display: inline-block;
+    margin: 0px 5px;
+    width: 15px;
+    height: 15px; }
+  #quote-carousel .carousel-indicators li.active {
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px; } }
